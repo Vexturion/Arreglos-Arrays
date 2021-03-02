@@ -19,5 +19,20 @@
 *.tar.gz
 *.rar
 
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+Arreglos (arrays)/build.xml
+Arreglos (arrays)/manifest.mf
+Arreglos (arrays)/nbproject/build-impl.xml
+Arreglos (arrays)/nbproject/project.xml
+Arreglos (arrays)/nbproject/genfiles.properties
+Arreglos (arrays)/nbproject/project.properties
