@@ -138,10 +138,74 @@ public class ArreglosArrays {
     
     System.out.println(matriz[2][1]);   // para acceder a los valores haremos uso de las coordenadas
     
-    // insercion de valores en una matriz mediante ciclo for
+    // lectura de valores en una matriz mediante ciclo for tradicional
     for (int posx= 0;posx <matriz.length; posx++){
-        for (int posy=0; posy<matriz[posx].length; posy++)
+        for (int posy=0; posy<matriz[posx].length; posy++){
+                System.out.println(matriz[posx][posy]);
+            }
     }
+    
+    // insercion de valores mediante ciclo for tradicional
+    for (int posx= 0;posx <matriz.length; posx++){
+        for (int posy=0; posy<matriz[posx].length; posy++){
+                matriz[posx][posy]= posy+1;
+            }
+    }
+    
+    // recorrido e impresion de valores de una matriz mediante ciclo foreach
+    for (int [] fila: matriz){
+        for(int celda: fila){
+            System.out.println(celda);
+        }
+    }
+    
+    // Arreglos multidimensionales o dinamicos
+    // a veces necesitaremos crear arreglos sin determminar la longitud
+    // ejemplo donde alumnos cursan distinta cantidad de materias
+    int calificaciones3[][]= new int [5][];
+    calificaciones3[0]= new int [1];
+    calificaciones3[1]= new int [2];
+    calificaciones3[2]= new int [3];
+    calificaciones3[3]= new int [4];
+    calificaciones3[4]= new int [5];
+    
+    calificaciones3[0][0]= 8;
+    
+    calificaciones3[1][0]= 9;
+    calificaciones3[1][1]= 10;
+    
+    calificaciones3[2][0]= 8;
+    calificaciones3[2][1]= 7;
+    calificaciones3[2][2]= 9;
+    
+    calificaciones3[3][0]= 7;
+    calificaciones3[3][1]= 5;
+    calificaciones3[3][2]= 6;
+    calificaciones3[3][3]= 9;
+    
+    calificaciones3[4][0]= 5;
+    calificaciones3[4][1]= 6;
+    calificaciones3[4][2]= 6;
+    calificaciones3[4][3]= 6;
+    calificaciones3[4][4]= 6;
+    
+    for (int calificacionesPorAlumno[]:calificaciones3){
+        for (int calificacion : calificacionesPorAlumno){
+            System.out.print(calificacion + " ");
+        }
+        System.out.println("");
+    }
+    
+    // ejercicios sobre arreglos
+    /*int numeros[] = new int [100];
+    for (int numero= 0; numero<numeros.length; numero++){
+        numeros[numero] = (int)(Math.random() * 100);   
+        int suma3 += numeros[numero];
+        }
+    
+    float promedio3 = (float)suma2/(float)calificaciones2.length;
+    
+    */
     
     
     
